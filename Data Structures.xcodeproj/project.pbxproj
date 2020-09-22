@@ -14,6 +14,8 @@
 		5A46E8AD2517376900F4C520 /* DataStructureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A46E8AC2517376900F4C520 /* DataStructureView.swift */; };
 		5A46E8B02517CD5700F4C520 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A46E8AF2517CD5700F4C520 /* VisualEffectBlur.swift */; };
 		5A46E8B32517CF7800F4C520 /* BSTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A46E8B22517CF7800F4C520 /* BSTView.swift */; };
+		5A583095251A483E0080B271 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A583094251A483E0080B271 /* LinkedList.swift */; };
+		5A583098251A4B090080B271 /* LinkedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A583097251A4B090080B271 /* LinkedListView.swift */; };
 		5AA04A0225173313004719A9 /* BST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA04A0125173313004719A9 /* BST.swift */; };
 		5AFBA3B52516E8DF0047B67A /* Data_StructuresApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFBA3B42516E8DF0047B67A /* Data_StructuresApp.swift */; };
 		5AFBA3B92516E8E00047B67A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AFBA3B82516E8E00047B67A /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 		5A46E8AC2517376900F4C520 /* DataStructureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructureView.swift; sourceTree = "<group>"; };
 		5A46E8AF2517CD5700F4C520 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		5A46E8B22517CF7800F4C520 /* BSTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTView.swift; sourceTree = "<group>"; };
+		5A583094251A483E0080B271 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		5A583097251A4B090080B271 /* LinkedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListView.swift; sourceTree = "<group>"; };
 		5AA04A0125173313004719A9 /* BST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BST.swift; sourceTree = "<group>"; };
 		5AFBA3B12516E8DF0047B67A /* Data Structures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Data Structures.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AFBA3B42516E8DF0047B67A /* Data_StructuresApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data_StructuresApp.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 				5A46E8AC2517376900F4C520 /* DataStructureView.swift */,
 				5A46E8AF2517CD5700F4C520 /* VisualEffectBlur.swift */,
 				5A46E8B22517CF7800F4C520 /* BSTView.swift */,
+				5A583097251A4B090080B271 /* LinkedListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -66,6 +71,7 @@
 				5A3FAA38251724E1008FD77C /* DataStructure.swift */,
 				5A3FAA3D25172531008FD77C /* DataStructureManager.swift */,
 				5AA04A0125173313004719A9 /* BST.swift */,
+				5A583094251A483E0080B271 /* LinkedList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,10 +197,12 @@
 				5A46E8A92517374200F4C520 /* Home.swift in Sources */,
 				5A46E8AD2517376900F4C520 /* DataStructureView.swift in Sources */,
 				5A46E8B02517CD5700F4C520 /* VisualEffectBlur.swift in Sources */,
+				5A583098251A4B090080B271 /* LinkedListView.swift in Sources */,
 				5A3FAA3425172463008FD77C /* DataStructureManagerMV.swift in Sources */,
 				5AFBA3B52516E8DF0047B67A /* Data_StructuresApp.swift in Sources */,
 				5A46E8B32517CF7800F4C520 /* BSTView.swift in Sources */,
 				5A3FAA39251724E1008FD77C /* DataStructure.swift in Sources */,
+				5A583095251A483E0080B271 /* LinkedList.swift in Sources */,
 				5A3FAA3E25172531008FD77C /* DataStructureManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -23,35 +23,40 @@ struct DataStructureView: View {
             VStack {
                 VisualEffectBlur(blurStyle: .systemUltraThinMaterial, vibrancyStyle: .none) {
                     VStack {
+                        
                         //Text(DS.name)
                         //  .font(.largeTitle).padding(.top, 10.0)
                         Text(String(DS.name))
                             .font(.largeTitle).padding(.top, 20.0)
                         Spacer()
-                        BSTView(tree: (DS as! BST).returnTreeChildren(root: (DS as! BST).root!), node: (DS as! BST).root!)
+                        if DS is BST {
+                            BSTView(tree: (DS as! BST).returnTreeChildren(root: (DS as! BST).root!), node: (DS as! BST).root!, first: true)
+                        } else if DS is LinkedList {
+                            LinkedListView(list: (DS as! LinkedList).returnListChildren(root: (DS as! LinkedList).head!), node: (DS as! LinkedList).head!, first: true)
+                        }
                         Spacer()
                         
-                        
                     }
-                    
-                }
+                }.background(LinearGradient(
+                    gradient: Gradient(colors: [.purple, .blue, .green]),
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
+                ))
+                
+                
+                
             }
-            
-            
-            
-        }.background(LinearGradient(
-            gradient: Gradient(colors: [.purple, .blue, .green]),
-            startPoint: .topLeading,
-            endPoint: .bottomTrailing
-        ))
+        }
     }
 }
 
 struct NodeView: View {
+    var first: Bool
     var node: Node
     var body: some View {
         if (node.val > 0) {
-            Text(String(node.val)).modifier(RoundedCircleStyle())
+            
+            Text(String(node.val)).modifier(RoundedCircleStyle(root: first))
             
         } else {
             Circle().frame(width: 25, height: 25, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/).opacity(0.0)
@@ -61,13 +66,30 @@ struct NodeView: View {
     
 }
 
+struct CollectDict<Key: Hashable, Value>: PreferenceKey {
+    static var defaultValue: [Key:Value] { [:] }
+    static func reduce(value: inout [Key:Value], nextValue: () -> [Key:Value]) {
+        value.merge(nextValue(), uniquingKeysWith: { $1 })
+    }
+}
+
+
 struct RoundedCircleStyle: ViewModifier {
+    let root: Bool
     func body(content: Content) -> some View {
-        content
-            .frame(width: 50, height: 50)
-            .background(Circle().stroke(Color.black))
-            .background(Circle().fill(Color.white))
-            .padding(10)
+        if (root) {
+            return content
+                .frame(width: 50, height: 50)
+                .background(Circle().stroke(Color.black))
+                .background(Circle().fill(Color(UIColor.yellow)))
+                .padding(10)
+        } else {
+            return content
+                .frame(width: 50, height: 50)
+                .background(Circle().stroke(Color.black))
+                .background(Circle().fill(Color.white))
+                .padding(10)
+        }
         
     }
 }

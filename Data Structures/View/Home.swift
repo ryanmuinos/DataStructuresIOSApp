@@ -209,6 +209,15 @@ struct Home_Previews: PreviewProvider {
         BST1.insert(value: 7)
         BST1.insert(value: 8)
         modelView.insert(DS: BST1)
+        
+        let LL1: LinkedList = LinkedList()
+        LL1.insert(value: 3)
+        LL1.insert(value: 5)
+        LL1.insert(value: 2)
+        LL1.insert(value: 1)
+        LL1.insert(value: 10)
+        modelView.insert(DS: LL1)
+        
         let BST2: BST = BST()
         BST2.insert(value: 3)
         BST2.insert(value: 1)
