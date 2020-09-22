@@ -1,4 +1,7 @@
 # DataStructuresIOSApp
-![Interface](https://user-images.githubusercontent.com/58897872/93853006-e90d1080-fc67-11ea-85eb-15efb817bee3.png)
+![Binary Search Tree ](https://user-images.githubusercontent.com/58897872/93906712-61e48a80-fcb1-11ea-93c3-f909196a0a0a.png)
+![Linked List](https://user-images.githubusercontent.com/58897872/93906769-72950080-fcb1-11ea-9179-31e7df9546f6.png)
+
+
 App used to visualize various Data Structures and their functions
-suc as Binary Tree and Linked List
+such as Binary Tree and Linked List. 
